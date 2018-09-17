@@ -20,9 +20,12 @@ namespace GIIS_WorldLab
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Field.Field field;
+
         public MainWindow()
-        {
+        {            
             InitializeComponent();
+            field = new Field.Field(100, 100, 15, 15, grid);
         }
     }
 }
